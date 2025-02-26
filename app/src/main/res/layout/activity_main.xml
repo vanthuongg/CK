@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_icon"
+    tools:context=".MainActivity">
+
+    <!-- Ảnh minh họa công việc -->
+
+    <!-- Dòng chữ thông báo -->
+
+    <ImageView
+        android:id="@+id/imgWork"
+        android:layout_width="410dp"
+        android:layout_height="385dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/workspace_image"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="293dp"
+        android:layout_height="43dp"
+        android:layout_marginTop="32dp"
+        android:text="Khám phá công việc mơ ước của bạn"
+        android:textColor="#1565C0"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imgWork" />
+
+    <TextView
+        android:id="@+id/txtDescription"
+        android:layout_width="351dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="16dp"
+        android:text="Khám phá tất cả các vai trò công việc hiện có dựa trên sở thích và chuyên ngành của bạn."
+        android:textColor="#424242"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/txtTitle" />
+
+    <!-- Nút Đăng nhập & Đăng ký -->
+    <LinearLayout
+        android:id="@+id/btnContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/txtDescription"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:backgroundTint="#1565C0"
+            android:text="ĐĂNG NHẬP"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF" />
+
+        <Button
+            android:id="@+id/btnRegister"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#1565C0"
+            android:text="ĐĂNG KÝ"
+            android:textAllCaps="true"
+            android:textColor="#FFFFFF"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
